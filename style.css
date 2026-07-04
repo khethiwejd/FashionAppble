@@ -1,0 +1,128 @@
+.header-logo {
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.btn-sm {
+  width: 120px;
+  height: 30px;
+  padding: 2px 10px;
+}
+
+nav {
+  padding: 30px;
+}
+
+body {
+  background-color: #f7f9f2;
+}
+
+p {
+  text-align: center;
+}
+
+.footer-logo {
+  border-radius: 50%;
+}
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: auto;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.5em;
+  color: white;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content p {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.overlay-content .btn {
+  display: inline-block;
+}
+
+/* There are no alternative pictures for these items, that is why i opted for "In Stock" overlay */
+.figure-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.figure-container img {
+  width: 100%;
+  display: block;
+}
+
+.figure-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.figure-container:hover .figure-overlay {
+  opacity: 1;
+}
+
+/* hover image */
+.image-swap-container {
+  position: relative;
+  width: 400px;
+}
+
+.image-swap-container img {
+  width: 100%;
+  display: block;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-swap-container:hover .hover-image {
+  opacity: 1;
+}
